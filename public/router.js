@@ -2,6 +2,7 @@ import { home } from "./template.js";
 
 $(document).ready(() => {
   page('/', index);
+  page('/:partnerId', partner)
   page('/:category', category);
   page();
 
@@ -23,4 +24,8 @@ function index() {
 
 function category(ctx) {
   $("#content").html("<h1>testezinho</h1>");
+}
+
+function partner() {
+  
 }

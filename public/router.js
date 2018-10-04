@@ -25,3 +25,7 @@ function index() {
 function category(ctx) {
   $("#content").html("<h1>testezinho</h1>");
 }
+
+function partner() {
+  
+}

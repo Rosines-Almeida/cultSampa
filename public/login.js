@@ -1,3 +1,5 @@
+var database = firebase.database();
+
 $(document).ready(function(){
   
   $(".btn-register").click(function(event) {
@@ -6,19 +8,21 @@ $(document).ready(function(){
     var password = $(".partner-password").val();
     var USER_ID = '';
 
-    console.log(email, password);
+    //console.log(email, password);
 
     firebase.auth().createUserWithEmailAndPassword(email, password)
     .then(function(response) {
       console.log(response);
       USER_ID = response.user.uid;
-      window.location = "/" + USER_ID;
 
       //adiciona no banco de dados
-      database.ref('users/' + USER_ID).set({
+      database.ref('partners/' + USER_ID).set({
         email,
         password,
       });
+
+      window.location = "/" + USER_ID;
+
 
     })
     .catch(function(error) {

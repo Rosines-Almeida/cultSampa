@@ -11,17 +11,23 @@
 </head>
 
 <body>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="/" class="closebtn">&times;</a>
+        <a href="/">About</a>
+        <a href="/">Services</a>
+        <a href="/">Clients</a>
+        <a href="/">Contact</a>
+      </div>
   <nav>
-    <a href="/" class="logo"><img src="/public/assets/logo.png"></a>
-    <ul>
-      <li>
-        <a href="/">Home</a>
-      </li>
-    </ul>
+    <button class="openbtn">&#9776;</button>
+
+    <a href="/" class="logo">
+      <img src="/public/assets/short-icon.png" width="100">
+    </a>
   </nav>
 
   <section id="content"></section>
-  
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
     crossorigin="anonymous"></script>
   <script type="module" src="/public/router.js"></script>

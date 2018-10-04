@@ -21,9 +21,9 @@
 
 <body>
   <div id="mySidepanel" class="sidepanel">
-    <a href="/" class="closebtn">&times;</a>
+    <a class="closebtn">&times;</a>
     <a href="/">About</a>
-    <a href="/" data-toggle="modal" data-target="#form-login">PARCEIROS</a>
+    <a href="/" data-toggle="modal" data-target="#form-login">Parceiros</a>
     <a href="/">Clients</a>
     <a href="/">Contact</a>
   </div>
@@ -39,12 +39,15 @@
     </a>
   </nav>
 
+  <section id="content">
+
+  </section>
 
   <div class="modal" id="form-login" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header flex-column d-flex align-items-center">
-          <img class="logo" src="/public/css/image/logo.png" alt="">
+          <img class="logo" src="/public/assets/short-icon.png" alt="">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -76,10 +79,6 @@
     </div>
   </div>
 
-
-
-  <section id="content"></section>
-
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -88,7 +87,9 @@
     crossorigin="anonymous"></script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+
     crossorigin="anonymous"></script>
+  <script type="module" src="/public/template.js"></script>
   <script type="module" src="/public/router.js"></script>
     <script type="module" src="/public/login.js"></script>
 

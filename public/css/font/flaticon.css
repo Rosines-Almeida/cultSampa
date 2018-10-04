@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 04/10/2018 18:34
+  	Creation date: 04/10/2018 19:25
   	*/
 
 @font-face {
@@ -33,3 +33,4 @@ font-style: normal;
 .flaticon-park:before { content: "\f103"; }
 .flaticon-gamepad:before { content: "\f104"; }
 .flaticon-discount-voucher:before { content: "\f105"; }
+.flaticon-masks:before { content: "\f106"; }

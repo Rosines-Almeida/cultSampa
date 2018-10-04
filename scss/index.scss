@@ -1,7 +1,10 @@
+@import 'variables';
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: $font;
 }
 
 nav{
@@ -10,7 +13,23 @@ nav{
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  i{
+    font-size: 35px;
+    color: #fff;
+  }
 }
+
+h1{
+  text-align: center;
+}
+
+.logo{
+  height: 80px;
+ }
+ 
+ .modal-header{
+  background-color:rgba(199, 189, 189, 0.404);
+ }
 
 .sidepanel {
   height: 100vh; 
@@ -42,6 +61,7 @@ nav{
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  cursor: pointer;
 }
 
 
@@ -61,7 +81,22 @@ a{
   text-decoration: none;
 }
 
-i{
-  font-size: 35px;
-  color: #fff;
+.categories{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px;
+  i{
+    font-size: 80px;
+    color: #000;
+  }
+  a{
+    background-color: #ccc;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 50%;
+    &:hover{
+      background-color: #F6BC94;
+    }
+  }
 }

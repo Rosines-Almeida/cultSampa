@@ -1,3 +1,5 @@
+import { home } from "./template.js";
+
 $(document).ready(() => {
   page('/', index);
   page('/:category', category);
@@ -16,7 +18,7 @@ $(document).ready(() => {
 })
 
 function index() {
-  $("#content").html("<h1>teste</h1>");
+  $("#content").html(home());
 };
 
 function category(ctx) {

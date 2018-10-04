@@ -5,13 +5,15 @@
 }
 
 nav{
-  background-color: #c1c1c1;
+  background-color: #ccc;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding: 0 20px;
 }
 
 .sidepanel {
-  height: 250px; 
+  height: 100vh; 
   width: 0; 
   position: fixed; 
   z-index: 1; 
@@ -21,22 +23,20 @@ nav{
   overflow-x: hidden; 
   padding-top: 60px; 
   transition: 0.5s;
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    &:hover {
+      color: #f1f1f1;
+    }
+  }
 }
 
-.sidepanel a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidepanel a:hover {
-  color: #f1f1f1;
-}
-
-.sidepanel .closebtn {
+.closebtn {
   position: absolute;
   top: 0;
   right: 25px;
@@ -44,15 +44,24 @@ nav{
   margin-left: 50px;
 }
 
+
 .openbtn {
-font-size: 20px;
-cursor: pointer;
-background-color: #111;
-color: white;
-padding: 10px 15px;
-border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ccc;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  &:hover {
+  background-color: #444;
+  }
 }
 
-.openbtn:hover {
-background-color: #444;
+a{
+  text-decoration: none;
+}
+
+i{
+  font-size: 35px;
+  color: #fff;
 }

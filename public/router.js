@@ -11,8 +11,8 @@ $(document).ready(() => {
     document.getElementById("mySidepanel").style.width = "0";
   }
 
-  $(".openBtn").click( () => openNav());
-  $(".closeBtn").click( () => closeNav());
+  $(".openbtn").click( () => openNav());
+  $(".closebtn").click( () => closeNav());
 })
 
 function index() {

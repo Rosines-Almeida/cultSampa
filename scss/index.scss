@@ -9,7 +9,7 @@
 
 nav{
   background-color: #ccc;
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
@@ -20,6 +20,7 @@ nav{
 }
 
 h1{
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -85,14 +86,14 @@ a{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 40px;
+  padding: 10px 40px;
   i{
     font-size: 80px;
     color: #000;
   }
   a{
     background-color: #ccc;
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 20px;
     border-radius: 50%;
     &:hover{
@@ -100,3 +101,11 @@ a{
     }
   }
 }
+
+.logo{
+  height: 80px;   
+ }
+ 
+ .modal-header{
+  background-color:rgba(199, 189, 189, 0.404);   
+ }

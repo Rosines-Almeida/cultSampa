@@ -1,5 +1,6 @@
 $(document).ready(() => {
   page('/', index);
+  page('/:partnerId', partner)
   page('/:category', category);
   page();
 

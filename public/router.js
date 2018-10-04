@@ -2,7 +2,8 @@ import { home } from "./template.js";
 
 $(document).ready(() => {
   page('/', index);
-  page('/:partnerId', partner)
+  page('/:partnerId', partner);
+  page('/coupons', coupons);
   page('/:category', category);
   page();
 
@@ -27,5 +28,9 @@ function category(ctx) {
 }
 
 function partner() {
-  
+  $("#content").html("");
+}
+
+function coupons() {
+  $("#content").html("");
 }

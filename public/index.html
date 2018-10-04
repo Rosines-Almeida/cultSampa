@@ -23,10 +23,8 @@
 <body>
   <div id="mySidepanel" class="sidepanel">
     <a class="closebtn">X</a>
-    <a href="/">About</a>
     <a href="/" data-toggle="modal" data-target="#form-login">Parceiros</a>
     <a href="/">Clients</a>
-    <a href="/">Contact</a>
   </div>
   <nav>
     <button class="openbtn">&#9776;</button>
@@ -41,9 +39,10 @@
   </nav>
 
   <section id="content">
-
+    
   </section>
 
+  <!-- MODAL LOGIN -->
   <div class="modal" id="form-login" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -80,6 +79,33 @@
     </div>
   </div>
 
+  <!-- MODAL DETALHE -->
+  <div class="modal" id="modal-detail" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header flex-column d-flex align-items-center">
+          <h1>${}</h1>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="${}" alt="" />
+          <h1 class="price">${}</h1>
+          <small class="price-off">${}</small>
+          <p class="percent">${}</p>
+          <p class="adress">${}</p>
+          <p class="qnt">${}</p>
+          <p class="phone">${}</p>
+          <p class="site">${}</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary center" id="cupom">PEGAR CUPOM</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -88,7 +114,6 @@
     crossorigin="anonymous"></script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-
     crossorigin="anonymous"></script>
   <script type="module" src="/public/template.js"></script>
   <script type="module" src="/public/router.js"></script>
